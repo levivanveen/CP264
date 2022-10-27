@@ -1,0 +1,88 @@
+------------------------------
+Start testing: sort_stacks:
+
+Case 1:
+Stack Size = 2 <12-10>
+Stack Size = 2 <13-11>
+output:
+Stack Size = 4 <10-11-12-13>
+
+Case 2:
+Stack Size = 5 <14-13-12-11-10>
+Stack Size = 3 <15-14-13>
+output:
+Stack Size = 8 <10-11-12-13-13-14-14-15>
+
+Case 3:
+Stack Size = 4 <13-12-11-10>
+Stack Size = 6 <10-9-8-7-6-5>
+Stack Size = 5 <15-13-11-9-7>
+output:
+Stack Size = 15 <5-6-7-7-8-9-9-10-10-11-11-12-13-13-15>
+
+End Testing: sort_stacks
+------------------------------
+
+------------------------------
+Start testing: delete_mid:
+
+Create Linked list with 5 elements
+10-->20-->30-->40-->50-->NULL
+
+calling delete_mid_list:
+Index of deleted item = 2, list after deletion:
+10-->20-->40-->50-->NULL
+
+calling delete_mid_list:
+Index of deleted item = 1, list after deletion:
+10-->40-->50-->NULL
+
+calling delete_mid_list:
+Index of deleted item = 1, list after deletion:
+10-->50-->NULL
+
+calling delete_mid_list:
+Index of deleted item = 0, list after deletion:
+50-->NULL
+
+calling delete_mid_list:
+Index of deleted item = 0, list after deletion:
+NULL
+
+calling delete_mid_list:
+Error(delete_mid_list): empty list
+Index of deleted item = -1, list after deletion:
+NULL
+
+destroy linked list
+End Testing: delete_mid
+------------------------------
+
+------------------------------
+Start: Testing MData:
+
+Testing create_mdata:
+MData of type p created successfully
+MData of type i created successfully
+Error(create_mdata): invalid data type
+Error(create_mdata): invalid pointer
+
+Testing print_mdata:
+type = process, value = [30](1000010000,1)
+type = integer, value = 10
+Error(print_mdata): unsupported data
+<NULL MData>
+
+Testing copy_mdata:
+Copy data of type p: type = process, value = [30](1000010000,1)
+Copy data of type i: type = integer, value = 10
+Copy data of type f: Error(copy_mdata): unsupported data
+<NULL MData>
+
+Testing destroy_mdata:
+mdata of type p successfully destroyed
+mdata of type i successfully destroyed
+
+End: Testing MData
+------------------------------
+

@@ -1,0 +1,39 @@
+Hello C World!
+This is my first program!
+
+Enter product price: 13.5
+Enter number of purchased items: 6
+Enter product name: shampoo
+Total price for buying 6 items of shampoo after tax is $91.53
+
+I live in PiTown in the area code r which is 3430 yards from the metro station
+
+The first letter of my city is 'P' and the second letter is 'i'.
+This is the same as the mathematical constant "PI"
+
+In math, the value of PI to seven digits = 3.14159274 and to 16 digits is 3.1415926535897931
+
+The coldest temperature in PiTown is -23 while the hottest is 32
+
+If you ever visit PiTown call me at my cell number "1119994444"
+
+Data Type                Bytes     Min                      Max                      
+-------------------------------------------------------------------------------
+char                     1         -128                     127                      
+unsigned char            1         0                        255                      
+
+short                    2         -32768                   32767                    
+unsigned short           2         0                        65535                    
+
+int                      4         -2147483648              2147483647               
+unsigned int             4         0                        4294967295               
+
+long                     4         -2147483648              2147483647               
+unsigned long            4         0                        4294967295               
+
+long long                8         -9223372036854775808     9223372036854775807      
+unsigned long long       8         0                        18446744073709551615     
+
+Enter radius of the base circle: 5.5
+Enter height of the cone: 11.6
+v = 367.28

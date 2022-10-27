@@ -1,0 +1,149 @@
+------------------------------
+Start: Testing Circular Queue:
+
+Calling cQueue* q = create_cqueue(10), print_cqueue(q):
+Capacity = 10, Size = 0, front = -1, rear = -1
+<empty_cqueue>
+
+Calling is_empty_cqueue(q): 1
+
+Calling insert_cqueue:
+success = 1
+Calling print_cqueue(q):
+Capacity = 10, Size = 1, front = 0, rear = 0
+[1](1000010000,10)
+
+Calling is_empty_cqueue(q):0
+
+Calling is_full_cqueue(q):0
+
+Adding 9 elements to cQueue:
+Capacity = 10, Size = 2, front = 0, rear = 1
+[1](1000010000,10)	[2](1000010001,11)
+
+Capacity = 10, Size = 3, front = 0, rear = 2
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)
+
+Capacity = 10, Size = 4, front = 0, rear = 3
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)
+
+Capacity = 10, Size = 5, front = 0, rear = 4
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+Capacity = 10, Size = 6, front = 0, rear = 5
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+[6](1000010005,15)
+
+Capacity = 10, Size = 7, front = 0, rear = 6
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+[6](1000010005,15)	[7](1000010006,16)
+
+Capacity = 10, Size = 8, front = 0, rear = 7
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)
+
+Capacity = 10, Size = 9, front = 0, rear = 8
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)
+
+Capacity = 10, Size = 10, front = 0, rear = 9
+[1](1000010000,10)	[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)
+[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)
+
+Calling is_full_cqueue(q):1
+Calling insert_queue:
+Error(insert_cqueue): cqueue is full
+success = 0
+
+Calling d = peek_cqueue(q):	[1](1000010000,10)
+
+Calling d = remove_cqueue(q)
+Printing removed data:
+[1](1000010000,10)
+Printing cQueue: 
+Capacity = 10, Size = 9, front = 1, rear = 9
+[2](1000010001,11)	[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)	[6](1000010005,15)
+[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)
+
+remove another element:
+Printing removed data:
+[2](1000010001,11)
+Printing cQueue: 
+Capacity = 10, Size = 8, front = 2, rear = 9
+[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)	[6](1000010005,15)	[7](1000010006,16)
+[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)
+
+is_full_cqueue(q):0
+
+Testing circular insertion/deletion:
+
+Calling insert_cqueue:
+Capacity = 10, Size = 9, front = 2, rear = 0
+[3](1000010002,12)	[4](1000010003,13)	[5](1000010004,14)	[6](1000010005,15)	[7](1000010006,16)
+[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)	[12](1000010011,21)
+
+remove 2 elements:
+Capacity = 10, Size = 7, front = 4, rear = 0
+[5](1000010004,14)	[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)
+[10](1000010009,19)	[12](1000010011,21)
+
+Calling insert_cqueue:
+Capacity = 10, Size = 8, front = 4, rear = 1
+[5](1000010004,14)	[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)
+[10](1000010009,19)	[12](1000010011,21)	[13](1000010012,22)
+
+remove all elements
+Printing removed data:
+[5](1000010004,14)
+Printing cQueue: 
+Capacity = 10, Size = 7, front = 5, rear = 1
+[6](1000010005,15)	[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)
+[12](1000010011,21)	[13](1000010012,22)
+
+Printing removed data:
+[6](1000010005,15)
+Printing cQueue: 
+Capacity = 10, Size = 6, front = 6, rear = 1
+[7](1000010006,16)	[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)	[12](1000010011,21)
+[13](1000010012,22)
+
+Printing removed data:
+[7](1000010006,16)
+Printing cQueue: 
+Capacity = 10, Size = 5, front = 7, rear = 1
+[8](1000010007,17)	[9](1000010008,18)	[10](1000010009,19)	[12](1000010011,21)	[13](1000010012,22)
+Printing removed data:
+[8](1000010007,17)
+Printing cQueue: 
+Capacity = 10, Size = 4, front = 8, rear = 1
+[9](1000010008,18)	[10](1000010009,19)	[12](1000010011,21)	[13](1000010012,22)
+
+Printing removed data:
+[9](1000010008,18)
+Printing cQueue: 
+Capacity = 10, Size = 3, front = 9, rear = 1
+[10](1000010009,19)	[12](1000010011,21)	[13](1000010012,22)
+
+Printing removed data:
+[10](1000010009,19)
+Printing cQueue: 
+Capacity = 10, Size = 2, front = 0, rear = 1
+[12](1000010011,21)	[13](1000010012,22)
+
+Printing removed data:
+[12](1000010011,21)
+Printing cQueue: 
+Capacity = 10, Size = 1, front = 1, rear = 1
+[13](1000010012,22)
+
+Printing removed data:
+[13](1000010012,22)
+Printing cQueue: 
+Capacity = 10, Size = 0, front = -1, rear = -1
+<empty_cqueue>
+
+Calling destroy_cqueue(&q):
+Destroyed Successfully
+
+End: Testing Circular Queue
+------------------------------
+

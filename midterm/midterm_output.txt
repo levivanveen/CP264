@@ -1,0 +1,140 @@
+------------------------------
+Start testing: replace_most_freq:
+
+*************
+Analyzing file input11.txt:
+There was no possibility of taking a walk that day.  We had b**n
+wandering, ind**d, in the leafless shrubbery an hour in the morning; but
+since dinner (Mrs. R**d, when there was no company, dined early) the cold
+winter wind had brought with it clouds so sombre, and a rain so
+penetrating, that further out-door exercise was now out of the question.
+
+I was glad of it: I never liked long walks, especially on chilly
+afternoons: dreadful to me was the coming home in the raw twilight, with
+nipped fingers and toes, and a heart saddened by the chidings of Bessie,
+the nurse, and humbled by the consciousness of my physical inferiority to
+Eliza, John, and Georgiana R**d.
+
+The said Eliza, John, and Georgiana were now clustered round their mama
+in the drawing-room: she lay reclined on a sofa by the fireside, and with
+her darlings about her (for the time neither quarrelling nor crying)
+looked perfectly happy.  Me, she had dispensed from joining the group;
+saying, "She regretted to be under the necessity of k**ping me at a
+distance; but that until she heard from Bessie, and could discover by her
+own observation, that I was endeavouring in good earnest to acquire a
+more sociable and childlike disposition, a more attractive and sprightly
+manner--something lighter, franker, more natural, as it were--she really
+must exclude me from privileges intended only for contented, happy,
+little children."
+
+"What does Bessie say I have done?" I asked.
+
+"Jane, I don't like cavillers or questioners; besides, there is something
+truly forbidding in a child taking up her elders in that manner.  Be
+seated somewhere; and until you can speak pleasantly, remain silent."
+
+Most frequent char = e
+
+*************
+Analyzing file input11.txt:
+A breakfast-room adjoined the drawing-rooms, I slipped in there.  It
+contained bookcases: I soon po__e__ed myself of volumes, taking care
+that it should be one stored with pictures.  I mounted into the window-
+seats: gathering up my feet, I sat cro__-legged, like a Turk; and, having
+drawn the red moreens curtain nearly close, I was shrined in double
+retirements.
+
+This sentence is full of double __. Examples include:
+supre__, compa__, discu__, fortre__, busine__, gro__, flo__, cla__, ble__ings, suspicious,
+bo__, mo__, to__, dismi__, confe__, hoste__, po__e__, le__, cro__, gra__, addre__,
+di__atisfactory, di__atisfaction, comi__ion, a__e__ment.
+
+Folds of scarlet drapery shut in my view to right hands; to left
+were the clear panes of gla__, protecting, but not separating me from the
+drear November days.  At intervals, while turning over leaves of my
+books, I studied the aspect of that winter afternoons.  Afar, it offered a
+pale blank of mist and clouds; near a scenes of wet lawn and storm-beat
+shrubs, with ceasele__ rain sweeping away wildly before a long and
+lamentable blasts.
+
+I returned to my book--Bewick's History of British Birds: the letterpre__
+thereof I cared little for, generally speaking; and yet there were
+certain introductory pages that, child as I was, I could not pa__ quite
+as a blank.  They were those which treat of the haunts of sea-fowl; of
+"the solitary rocks and promontories" by them only inhabited; of
+coast of Norway, studded with isles from its southern extremity,
+Lindene__, or Naze, to the North Cape--
+
+"Where the Northern Oceans, in vast whirls,
+Boils round the naked, melancholy isles
+Of farthest Thules; and Atlantic surges
+Pours in among stormy Hebrides."
+
+Most frequent char = s
+
+*************
+Analyzing file nothing.txt:
+Error(replace_most_freq): Could not open file nothing.txt
+
+End Testing: replace_most_freq
+------------------------------
+
+------------------------------
+Start testing: remove_nums:
+
+Case 1:
+input array = [ 9.35 , 43.12 , 17.28 , 28.67 , 5.31 , 26.74 , 18.01 , 6.97 , 2.54 , 9.45 ]
+returned array = [ 9.35 , 5.31 , 6.97 , 2.54 , 9.45 ]
+modified input array = [ 43.12 , 17.28 , 28.67 , 26.74 , 18.01 ]
+
+Case 2:
+input array = [ 9.35 , 43.12 , 17.28 , 28.67 , 5.31 , 26.74 , 18.01 , 6.97 ]
+returned array = [ 5.31 , 6.97 ]
+modified input array = [ 9.35 , 43.12 , 17.28 , 28.67 , 26.74 , 18.01 ]
+
+Case 3: Error cases:
+Error(remove_nums): invalid size
+result = NULL
+Error(remove_nums): invalid array
+result = NULL
+Error(remove_nums): invalid array
+result = NULL
+
+End Testing: remove_nums
+------------------------------
+
+------------------------------
+Start testing: format_square_series:
+
+Case 1:
+square_series(4.0000,0.1200):
+0.5000 - 0.3536 + 0.2887 - 0.2500 + 0.2236 - 0.2041 + 0.1890 - 0.1768 + 0.1667 - 0.1581
+sum = 0.2254
+Breaking point is at: 0.1581
+previous value = 0.1667
+first item in the series = 0.5000
+
+Case 2:
+square_series(6.1560,0.3600):
+0.4030 - 0.2850
+sum = 0.1180
+Breaking point is at: 0.2850
+previous value = 0.4030
+first item in the series = 0.4030
+
+Case 3:
+square_series(8.0000,0.3600):
+0.3536
+sum = 0.3536
+Breaking point is at: 0.3536
+first item in the series = 0.3536
+
+Case 4:
+Error(square_series): invalid value of a
+first item in the series = NULL
+Error(square_series): invalid pointer
+first item in the series = NULL
+
+End Testing: format_square_series
+------------------------------
+

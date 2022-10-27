@@ -1,0 +1,57 @@
+------------------------------
+Start: Testing write_nums:
+
+check file nums.txt for output
+End: Testing write_nums
+------------------------------
+
+------------------------------
+Start: Testing read_nums:
+
+ 5  6  7  8  9 10 11 
+
+number of items = 7
+
+End: Testing read_nums
+------------------------------
+
+------------------------------
+Start: Testing extract_minutes:
+
+Minutes of line 1 = 33
+Minutes of line 2 = 22
+Minutes of line 3 = 3
+Minutes of line 4 = 2
+Minutes of line 5 = 0
+
+End: Testing extract_minutes
+------------------------------
+
+------------------------------
+Start: Testing print_record_info:
+
+Testing print_record_info1:
+Registration year = 2018
+Birthday = June 14,1994
+Name = David Smith
+
+Testing print_record_info2:
+Registration year = 2018
+Birthday = June 14,1994
+Name = David Smith
+
+Registration year = 2018
+Birthday = June 14,1994
+Name = David Smith
+
+End: Testing print_record_info
+------------------------------
+
+------------------------------
+Start: Testing modify_grades:
+
+check file grades.txt for output
+
+End: Testing modify_grades
+------------------------------
+

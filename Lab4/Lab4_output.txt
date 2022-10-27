@@ -1,0 +1,90 @@
+Case 1: Invalid array pointer:
+Error(find_match): NULL pointer
+first = NULL and last = NULL
+
+------------------------
+Case 2: Invalid array size
+Error(find_match): invalid size
+first = NULL and last = NULL
+
+------------------------
+Case 3: Item not found
+first = NULL and last = NULL
+
+------------------------
+Case 4: First item at start and last at the middle
+Looking for 22 in the array: {22, 25, 20, 27, 22, 20, 24, 19, 28, 26, 23}
+
+First item in the array starts at memory address: 000000000065FDE0
+Last item in the array starts at memory address: 000000000065FE08
+
+The first pointer points to value: 22 
+The last pointer points to value: 22
+
+First match is located at memory address: 000000000065FDE0
+Last match is located at memory address 000000000065FDF0
+
+Index of first match is 0
+Index of last match is 4
+
+Value after first match is 25
+Value before last match is 27
+
+------------------------
+Case 5: First and last item at the middle
+Looking for 20 in the array: {22, 25, 20, 27, 22, 20, 24, 19, 28, 26, 23, 24}
+
+First item in the array starts at memory address: 000000000065FDE0
+Last item in the array starts at memory address: 000000000065FE0C
+
+The first pointer points to value: 20 
+The last pointer points to value: 20
+
+First match is located at memory address: 000000000065FDE8
+Last match is located at memory address 000000000065FDF4
+
+Index of first match is 2
+Index of last match is 5
+
+Value after first match is 27
+Value before last match is 22
+
+------------------------
+Case 6: First and last item is the same
+Looking for 28 in the array: {22, 25, 20, 27, 22, 20, 24, 19, 28, 26, 23, 24}
+
+First item in the array starts at memory address: 000000000065FDE0
+Last item in the array starts at memory address: 000000000065FE0C
+
+The first pointer points to value: 28 
+The last pointer points to value: 28
+
+First match is located at memory address: 000000000065FE00
+Last match is located at memory address 000000000065FE00
+
+Index of first match is 8
+Index of last match is 8
+
+Value after first match is 26
+Value before last match is 19
+
+------------------------
+Case 7: First item at the middle and last at the end
+Looking for 24 in the array: {20, 27, 22, 20, 24, 19, 28, 26, 23, 24}
+
+First item in the array starts at memory address: 000000000065FDE8
+Last item in the array starts at memory address: 000000000065FE0C
+
+The first pointer points to value: 24 
+The last pointer points to value: 24
+
+First match is located at memory address: 000000000065FDF8
+Last match is located at memory address 000000000065FE0C
+
+Index of first match is 4
+Index of last match is 9
+
+Value after first match is 19
+Value before last match is 23
+
+------------------------

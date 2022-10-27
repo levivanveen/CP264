@@ -1,0 +1,205 @@
+------------------------------
+Start: Testing find_max_heap & find_min_heap:
+
+Creating a heap with capacity = 20
+
+Error(find_max_heap): empty heap
+Error(find_min_heap): empty heap
+
+heap Capacity = 20, size = 1
+[60]
+max = 60
+min = 60
+
+heap Capacity = 20, size = 2
+[70 , 60]
+max = 70
+min = 60
+
+heap Capacity = 20, size = 3
+[70 , 60 , 40]
+max = 70
+min = 40
+
+heap Capacity = 20, size = 4
+[90 , 70 , 40 , 60]
+max = 90
+min = 40
+
+heap Capacity = 20, size = 5
+[100 , 90 , 40 , 60 , 70]
+max = 100
+min = 40
+
+heap Capacity = 20, size = 6
+[100 , 90 , 40 , 60 , 70 , 30]
+max = 100
+min = 30
+
+heap Capacity = 20, size = 7
+[110 , 90 , 100 , 60 , 70 , 30 , 40]
+max = 110
+min = 30
+
+heap Capacity = 20, size = 8
+[110 , 90 , 100 , 80 , 70 , 30 , 40 , 60]
+max = 110
+min = 30
+
+heap Capacity = 20, size = 9
+[120 , 110 , 100 , 90 , 70 , 30 , 40 , 60 , 80]
+max = 120
+min = 30
+
+heap Capacity = 20, size = 10
+[160 , 120 , 100 , 90 , 110 , 30 , 40 , 60 , 80 , 70]
+max = 160
+min = 30
+
+heap Capacity = 20, size = 11
+[160 , 120 , 100 , 90 , 110 , 30 , 40 , 60 , 80 , 70 , 20]
+max = 160
+min = 20
+
+heap Capacity = 20, size = 12
+[160 , 120 , 130 , 90 , 110 , 100 , 40 , 60 , 80 , 70 , 20 , 30]
+max = 160
+min = 20
+
+heap Capacity = 20, size = 13
+[160 , 120 , 140 , 90 , 110 , 130 , 40 , 60 , 80 , 70 , 20 , 30 , 100]
+max = 160
+min = 20
+
+heap destroyed successfully
+
+End: Testing find_max_heap & find_min_heap
+------------------------------
+
+------------------------------
+Start: Testing heapify_up:
+
+Create a heap with capacity = 5
+heap Capacity = 5, size = 0
+<empty heap>
+
+insert 40:
+heap Capacity = 5, size = 1
+[40]
+
+insert 70:
+heap Capacity = 5, size = 2
+[70 , 40]
+
+insert 10:
+heap Capacity = 5, size = 3
+[70 , 40 , 10]
+
+insert 30:
+heap Capacity = 5, size = 4
+[70 , 40 , 10 , 30]
+
+insert 90:
+heap Capacity = 5, size = 5
+[90 , 70 , 10 , 30 , 40]
+
+insert 50:
+heap Capacity = 10, size = 6
+[90 , 70 , 50 , 30 , 40 , 10]
+
+insert 100:
+heap Capacity = 10, size = 7
+[100 , 70 , 90 , 30 , 40 , 10 , 50]
+
+insert 20:
+heap Capacity = 10, size = 8
+[100 , 70 , 90 , 30 , 40 , 10 , 50 , 20]
+
+insert 60:
+heap Capacity = 10, size = 9
+[100 , 70 , 90 , 60 , 40 , 10 , 50 , 20 , 30]
+
+insert 80:
+heap Capacity = 10, size = 10
+[100 , 80 , 90 , 60 , 70 , 10 , 50 , 20 , 30 , 40]
+
+heap successfully destroyed
+
+End: Testing heapify_up
+------------------------------
+
+------------------------------
+Start: Testing get_leaves:
+
+Creating a heap with capacity = 20
+number of leaves = 0, leaves = 
+
+heap Capacity = 20, size = 1
+[60]
+number of leaves = 1, leaves = 0 
+
+heap Capacity = 20, size = 2
+[70 , 60]
+number of leaves = 1, leaves = 1 
+
+heap Capacity = 20, size = 3
+[70 , 60 , 40]
+number of leaves = 2, leaves = 1 2 
+
+heap Capacity = 20, size = 4
+[90 , 70 , 40 , 60]
+number of leaves = 2, leaves = 2 3 
+
+heap Capacity = 20, size = 5
+[100 , 90 , 40 , 60 , 70]
+number of leaves = 3, leaves = 2 3 4 
+
+heap Capacity = 20, size = 6
+[100 , 90 , 40 , 60 , 70 , 30]
+number of leaves = 3, leaves = 3 4 5 
+
+heap Capacity = 20, size = 7
+[110 , 90 , 100 , 60 , 70 , 30 , 40]
+number of leaves = 4, leaves = 3 4 5 6 
+
+heap Capacity = 20, size = 8
+[110 , 90 , 100 , 80 , 70 , 30 , 40 , 60]
+number of leaves = 4, leaves = 4 5 6 7 
+
+heap Capacity = 20, size = 9
+[120 , 110 , 100 , 90 , 70 , 30 , 40 , 60 , 80]
+number of leaves = 5, leaves = 4 5 6 7 8 
+
+heap Capacity = 20, size = 10
+[160 , 120 , 100 , 90 , 110 , 30 , 40 , 60 , 80 , 70]
+number of leaves = 5, leaves = 5 6 7 8 9 
+
+heap Capacity = 20, size = 11
+[160 , 120 , 100 , 90 , 110 , 30 , 40 , 60 , 80 , 70 , 20]
+number of leaves = 6, leaves = 5 6 7 8 9 10 
+
+heap Capacity = 20, size = 12
+[160 , 120 , 130 , 90 , 110 , 100 , 40 , 60 , 80 , 70 , 20 , 30]
+number of leaves = 6, leaves = 6 7 8 9 10 11 
+
+heap Capacity = 20, size = 13
+[160 , 120 , 140 , 90 , 110 , 130 , 40 , 60 , 80 , 70 , 20 , 30 , 100]
+number of leaves = 7, leaves = 6 7 8 9 10 11 12 
+
+heap destroyed successfully
+
+End: Testing get_leaves
+------------------------------
+
+------------------------------
+Start: Testing heap_sort:
+
+Printing array before sorting: 
+[130,40,70,120,10,30,110,180,90,170,140,190,50,100,20,60,200,150,80,160]
+
+Printing array after sorting: 
+[10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200]
+
+End: Testing heap_sort
+------------------------------
+

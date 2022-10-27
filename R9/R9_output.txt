@@ -1,0 +1,174 @@
+------------------------------
+Start: Testing Linear and Binary Search:
+
+Searching the array: [19]
+linear_search(19) =    0
+linear_search_r(19) =  0
+binary_search(19) =    0
+binary_search_r(19) =  0
+
+linear_search(37) =   -1
+linear_search_r(37) = -1
+binary_search(37) =   -1
+binary_search_r(37) = -1
+
+linear_search(21) =   -1
+linear_search_r(21) = -1
+binary_search(21) =   -1
+binary_search_r(21) = -1
+
+linear_search(69) =   -1
+linear_search_r(69) = -1
+binary_search(69) =   -1
+binary_search_r(69) = -1
+
+linear_search(54) =   -1
+linear_search_r(54) = -1
+binary_search(54) =   -1
+binary_search_r(54) = -1
+
+linear_search(51) =   -1
+linear_search_r(51) = -1
+binary_search(51) =   -1
+binary_search_r(51) = -1
+
+Searching the array: [19,21,37,54,69]
+linear_search(19) =    0
+linear_search_r(19) =  0
+binary_search(19) =    0
+binary_search_r(19) =  0
+
+linear_search(37) =    2
+linear_search_r(37) =  2
+binary_search(37) =    2
+binary_search_r(37) =  2
+
+linear_search(21) =    1
+linear_search_r(21) =  1
+binary_search(21) =    1
+binary_search_r(21) =  1
+
+linear_search(69) =    4
+linear_search_r(69) =  4
+binary_search(69) =    4
+binary_search_r(69) =  4
+
+linear_search(54) =    3
+linear_search_r(54) =  3
+binary_search(54) =    3
+binary_search_r(54) =  3
+
+linear_search(51) =   -1
+linear_search_r(51) = -1
+binary_search(51) =   -1
+binary_search_r(51) = -1
+
+Searching the array: [19,21,21,37,54,69,77,82,91,97]
+linear_search(19) =    0
+linear_search_r(19) =  0
+binary_search(19) =    0
+binary_search_r(19) =  0
+
+linear_search(37) =    3
+linear_search_r(37) =  3
+binary_search(37) =    3
+binary_search_r(37) =  3
+
+linear_search(21) =    1
+linear_search_r(21) =  1
+binary_search(21) =    1
+binary_search_r(21) =  1
+
+linear_search(69) =    5
+linear_search_r(69) =  5
+binary_search(69) =    5
+binary_search_r(69) =  5
+
+linear_search(54) =    4
+linear_search_r(54) =  4
+binary_search(54) =    4
+binary_search_r(54) =  4
+
+linear_search(51) =   -1
+linear_search_r(51) = -1
+binary_search(51) =   -1
+binary_search_r(51) = -1
+
+End: Testing Linear and Binary Search
+------------------------------
+
+------------------------------
+Start: Testing Bubble Sort:
+
+Sorting array 0:
+[19]
+
+Sorting array 1:
+[19,21,33,54,69]
+
+Sorting array 2:
+[15,21,37,41,51,54,68,69,77,97]
+
+End: Testing Bubble Sort
+------------------------------
+
+------------------------------
+Start: Testing Insertion Sort:
+
+Sorting array 0:
+[19]
+
+Sorting array 1:
+[19,21,33,54,69]
+
+Sorting array 2:
+[15,21,37,41,51,54,68,69,77,97]
+
+End: Testing Insertion Sort
+------------------------------
+
+------------------------------
+Start: Testing Selection Sort:
+
+Sorting array 0:
+[19]
+
+Sorting array 1:
+[19,21,33,54,69]
+
+Sorting array 2:
+[15,21,37,41,51,54,68,69,77,97]
+
+End: Testing Selection Sort
+------------------------------
+
+------------------------------
+Start: Testing Quick Sort:
+
+Sorting array 0:
+[19]
+
+Sorting array 1:
+[19,21,33,54,69]
+
+Sorting array 2:
+[15,21,37,41,51,54,68,69,77,97]
+
+End: Testing Quick Sort
+------------------------------
+
+------------------------------
+Start: Testing Merge Sort:
+
+Sorting array 0:
+[19]
+
+Sorting array 1:
+[19,21,33,54,69]
+
+Sorting array 2:
+[15,21,37,41,51,54,68,69,77,97]
+
+End: Testing Merge Sort
+------------------------------
+

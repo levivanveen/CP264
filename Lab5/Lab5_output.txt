@@ -1,0 +1,27 @@
+------------------------------
+Start: Testing Caesar Cipher:
+
+key = 5
+plaintext = abcdefghijklmnopqrstuvwxyz
+ciphertext= fghijklmnopqrstuvwxyzabcde
+
+ciphertext = fghijklmnopqrstuvwxyzabcde
+plaintext = abcdefghijklmnopqrstuvwxyz
+
+key = 5
+plaintext = Welcome Back
+ciphertext= Bjqhtrj Gfhp
+
+ciphertext = Bjqhtrj Gfhp
+plaintext = Welcome Back
+
+key = 4
+plaintext = Welcome Back
+ciphertext= Aipgsqi Fego
+
+ciphertext = Aipgsqi Fego
+plaintext = Welcome Back
+
+End: Testing Caesar Cipher
+------------------------------
+

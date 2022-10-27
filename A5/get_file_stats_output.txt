@@ -1,0 +1,21 @@
+Analyzing file cIntro.txt:
+#Paragraphs = 5
+#lines = 9
+#words = 38
+#characters = 234
+	#uppers = 5
+	#lowers = 222
+	#others = 7
+#spaces = 42
+
+Analyzing file chistory.txt:
+#Paragraphs = 3
+#lines = 18
+#words = 150
+#characters = 895
+	#uppers = 31
+	#lowers = 829
+	#others = 35
+#spaces = 152
+
+Error(get_file_stats): Could not open file nothing.txt

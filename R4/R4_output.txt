@@ -1,0 +1,134 @@
+------------------------------
+Start: Testing learn_pointers1:
+
+int x = 10, *ptr = &x;
+Printing x = 10
+Printing &x in hex = 0061FEDC and in decimal =6422236
+Printing *(&x) = 10
+Printing sizeof(x) = 4
+Printing *ptr1 = 10
+Printing ptr1 in hex = 0061FEDC and in decimal =6422236
+Printing &ptr1 in hex = 0061FED8 and in decimal =6422232
+Printing sizeof(ptr1) = 4
+Printing sizeof(*ptr1) = 4
+
+double y = 10.0, *ptr2 = &y;
+Printing y = 10.50
+Printing &y in hex = 0061FED0 and in decimal =6422224
+Printing *(&y) = 10.50
+Printing sizeof(y) = 8
+Printing *ptr2 = 10.50
+Printing ptr2 in hex = 0061FED0 and in decimal =6422224
+Printing &ptr2 in hex = 0061FECC and in decimal =6422220
+Printing sizeof(ptr2) = 4
+Printing sizeof(*ptr2) = 8
+
+End: Testing learn_pointers1
+------------------------------
+
+------------------------------
+Start: Testing learn_pointers2:
+
+x[3] = { 10, 20, 30 }, *ptr1 = x;
+Printing x[0] = 10
+Printing x = 6422228
+Printing &x in hex = 0061FED4 and in decimal =6422228
+Printing sizeof(x) = 12
+Printing *ptr1 = 10
+Printing ptr1 in hex = 0061FED4 and in decimal =6422228
+Printing &ptr1 in hex = 0061FED0 and in decimal =6422224
+Printing sizeof(ptr1) = 4
+Printing sizeof(*ptr1) = 4
+
+ptr1[1] = 20
+*(ptr1 + 2) = 30
+*(x + 2) = 30
+Printing *ptr1 after ptr1++ = 20
+Printing *ptr1 after ptr1-- = 10
+Printing *ptr1 after ptr1=&x[2]; = 30
+Printing *ptr1 after (*ptr1)++; = 31
+
+
+End: Testing learn_pointers2
+------------------------------
+
+------------------------------
+Start: Testing swap functions:
+
+Case 1: swap1(n1,n2):
+Before swap: n1 = 10, n2 = 20
+After swap: n1 = 10, n2 = 20
+
+Case 2: swap2(p1,p2):
+Before swap: n1 = 10, n2 = 20
+After swap: n1 = 20, n2 = 10
+
+Case 3: swap2(&n1,&n2):
+Before swap: n1 = 20, n2 = 10
+After swap: n1 = 10, n2 = 20
+
+Case 4: swap3(&p1,&p2):
+Before swap: n1 = 10, n2 = 20
+Before swap: p1 = 0061FEF4, p2 = 0061FEF0
+After swap: n1 = 10, n2 = 20
+After swap: p1 = 0061FEF0, p2 = 0061FEF4
+
+Case 5: swap3(pp1,pp2):
+Before swap: n1 = 10, n2 = 20
+Before swap: p1 = 0061FEF0, p2 = 0061FEF4
+After swap: n1 = 10, n2 = 20
+After swap: p1 = 0061FEF4, p2 = 0061FEF0
+
+End: Testing swap
+------------------------------
+
+------------------------------
+Start: Testing reverse_array:
+
+reversing [1,2,3,4,5,6,7,8,9,10]
+After reverse: [10,9,8,7,6,5,4,3,2,1]
+
+reversing [10,9,8,7,6]
+After reverse: [6,7,8,9,10]
+
+Calling function on NULL pointer:
+Error(reverse_array): NULL pointer
+
+Calling function on negative size:
+Error(reverse_array): invalid size
+
+End: Testing swap
+------------------------------
+
+------------------------------
+Start: Testing swap4:
+
+Case 1: int swap:
+Before swap: n1 = 10, n2 = 20
+After swap: n1 = 20, n2 = 10
+
+Case 2: char swap:
+Before swap: c1 = a, c2 = b
+After swap: c1 = b, c2 = a
+
+Case 3: float swap:
+Before swap: f1 = 5.0, f2 = 6.0
+After swap: f1 = 6.0, c2 = 5.0
+
+Case 4: double swap:
+Before swap: d1 = 5.0, d2 = 6.0
+Error(swap4): unsupported mode
+
+End: Testing swap4
+------------------------------
+
+------------------------------
+Start: Testing find_max_min:
+
+Array: [40,100,30,90,20,60,10,80,50,70]
+Max = 100 at index = 1
+Min = 10 at index = 6
+
+End: Testing find_max_min
+------------------------------
+

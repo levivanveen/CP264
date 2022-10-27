@@ -1,0 +1,104 @@
+------------------------------
+Start: Testing get_array:
+
+Testing malloc:
+array[0] = 10 and array[10] = 20
+
+Testing calloc:
+array[0] = 13 and array[15] = 28
+Printing value outside array = 0
+
+End: Testing get_array
+------------------------------
+
+------------------------------
+Start: Testing insert/remove:
+
+Before insert/remove
+[0,1,2,3,4,5,6,7,8,9]
+After inserting 100 at position 3:
+[0,1,2,100,3,4,5,6,7,8,9]
+After deleting value 8:
+[0,1,2,100,3,4,5,6,7,9]
+
+End: Testing insert/remove
+------------------------------
+
+------------------------------
+Start: Testing init_str:
+
+s1 = String1 , sizeof(s1) = 20
+s2 = String2 , sizeof(s2) = 8
+s3 = String3 , sizeof(s3) = 4
+s4 = String4 , sizeof(s4) = 4
+s5 = String5 , sizeof(s5) = 8
+
+End: Testing init_str
+------------------------------
+
+------------------------------
+Start: Testing reverse_str:
+
+Method 1:
+Before: abcdefg
+After: gfedcba
+Before: Good morning
+After: gninrom dooG
+Before: 
+After: 
+
+Method 2:
+Before: abcdefg
+After: gfedcba
+Before: Good morning
+After: gninrom dooG
+Before: 
+After: 
+
+Method 3:
+Before: abcdefg
+After: original = gfedcba, new = gfedcba
+Before: Good morning
+After: original = gninrom dooG, new = gninrom dooG
+Before: 
+After: original = , new = 
+
+Method 4:
+Before: abcdefg
+After: original = abcdefg, new = gfedcba
+Before: Good morning
+After: original = Good morning, new = gninrom dooG
+Before: 
+After: original = , new = 
+
+End: Testing reverse_str
+------------------------------
+
+------------------------------
+Start: Testing swap_str:
+
+Method 1:
+Before swap: s1 = Day , s2 = Night
+After swap: s1 = Night , s2 = Day
+
+Method 2:
+Before swap: s1 = Day , s2 = Night
+After swap: s1 = Night , s2 = Day
+
+End: Testing swap_str
+------------------------------
+
+------------------------------
+Start: Testing has_double:
+
+has_double("") = 0
+has_double("cat") = 0
+has_double("seed") = 1
+has_double("responsible") = 1
+has_double("$a$") = 0
+has_double("roar") = 1
+has_double("Clock") = 1
+
+End: Testing has_double
+------------------------------
+

@@ -1,0 +1,200 @@
+Start: Testing calc_price:
+
+Case 1: For loop:
+Enter unit price for item 1: -1
+
+Total Cost = 0.000
+
+Enter unit price for item 1: 10
+Enter number of units: 10
+Item total = 113.00
+
+Enter unit price for item 2: 20
+Enter number of units: 20
+Item total = 452.00
+
+Total Cost = 565.000
+
+Case 2: while loop:
+Enter unit price for item 1: -1
+
+Total Cost = 0.000
+
+Enter unit price for item 1: 10
+Enter number of units: 10
+Item total = 113.00
+
+Enter unit price for item 2: 20
+Enter number of units: 20
+Item total = 452.00
+
+Total Cost = 565.000
+
+Case 3: do-while loop:
+Enter unit price for item 1: -1
+
+Total Cost = 0.000
+
+Enter unit price for item 1: 10
+Enter number of units: 10
+Item total = 113.00
+
+Enter unit price for item 2: 20
+Enter number of units: 20
+Item total = 452.00
+
+Total Cost = 565.000
+
+End: Testing calc_price
+------------------------------
+Start: Testing draw_triangle
+
+draw_triangle(-1,L,*):
+Error(draw_triangle): invalid height
+
+draw_triangle(5,S,*):
+Error(draw_triangle): invalid direction
+
+draw_triangle(0,R,*):
+
+draw_triangle(1,R,*):
+*
+
+draw_triangle(1,L,*):
+*
+
+draw_triangle(2,R,#):
+ #
+##
+
+draw_triangle(2,L,#):
+#
+##
+
+draw_triangle(5,R,$):
+    $
+   $$
+  $$$
+ $$$$
+$$$$$
+
+draw_triangle(5,L,$):
+$
+$$
+$$$
+$$$$
+$$$$$
+
+End: Testing draw_triangle
+------------------------------
+Start: Testing init, len and print functions
+
+Before initialization: 
+len() = 0
+[]
+
+init(-2)
+Error(init): invalid size
+len() = 0
+[]
+
+init(0)
+len() = 0
+[]
+
+init(2)
+len() = 2
+[0,1]
+
+init(4)
+len() = 4
+[0,1,2,3]
+
+init(6)
+len() = 6
+[0,1,2,3,4,5]
+
+init(8)
+len() = 8
+[0,1,2,3,4,5,6,7]
+
+init(10)
+len() = 10
+[0,1,2,3,4,5,6,7,8,9]
+
+init(12)
+Error(init): invalid size
+len() = 10
+[0,1,2,3,4,5,6,7,8,9]
+
+End: Testing init, len and print functions
+------------------------------
+Start: Testing append, insert, reverse
+Initialize:[]
+After reverse:[]
+
+insert(0,10): [10]
+After reverse:[10]
+
+append(20): [10,20]
+insert(2,30): [10,20,30]
+After reverse:[30,20,10]
+
+append(40): [30,20,10,40]
+insert(1,15): [30,15,20,10,40]
+After reverse:[40,10,20,15,30]
+
+insert(-1,25): Error(insert): invalid position
+[40,10,20,15,30]
+
+append(50): [40,10,20,15,30,50]
+append(60): [40,10,20,15,30,50,60]
+append(70): [40,10,20,15,30,50,60,70]
+append(80): [40,10,20,15,30,50,60,70,80]
+append(90): [40,10,20,15,30,50,60,70,80,90]
+append(100): Error(append): overflow
+[40,10,20,15,30,50,60,70,80,90]
+insert(0,100): Error(insert): overflow
+[40,10,20,15,30,50,60,70,80,90]
+
+End: Testing append, insert, reverse
+------------------------------
+Start: Testing swap_mid:
+
+array before swap_mid: []
+Error(swap_mid): invalid length
+array after swap_mid: []
+
+array before swap_mid: [10]
+array after swap_mid: [10]
+
+array before swap_mid: [10,20]
+Error(swap_mid): invalid length
+array after swap_mid: [10,20]
+
+array before swap_mid: [10,20,30]
+array after swap_mid: [30,20,10]
+
+array before swap_mid: [10,20,30,40]
+Error(swap_mid): invalid length
+array after swap_mid: [10,20,30,40]
+
+array before swap_mid: [10,20,30,40,50]
+array after swap_mid: [40,50,30,10,20]
+
+array before swap_mid: [10,20,30,40,50,60]
+Error(swap_mid): invalid length
+array after swap_mid: [10,20,30,40,50,60]
+
+array before swap_mid: [10,20,30,40,50,60,70]
+array after swap_mid: [50,60,70,40,10,20,30]
+
+array before swap_mid: [10,20,30,40,50,60,70,80]
+Error(swap_mid): invalid length
+array after swap_mid: [10,20,30,40,50,60,70,80]
+
+array before swap_mid: [10,20,30,40,50,60,70,80,90]
+array after swap_mid: [60,70,80,90,50,10,20,30,40]
+
+End: Testing swap_mid
+------------------------------

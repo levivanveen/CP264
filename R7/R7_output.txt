@@ -1,0 +1,290 @@
+------------------------------
+Start: Testing Process structure:
+
+Testing create_process:
+	Process* p1 = create_process(10000100000,40,10):
+	arrival = 	10
+	PID = 		1000010000
+	time = 		40
+
+Testing get_process_info:
+	get_process_info(p1,info)
+	value of info = [10](1000010000,40)
+
+Testing print_process:
+	call print_process(p1):
+	[10](1000010000,40)
+
+Creating Process p2:
+	[16](2000020000,38)
+
+Testing copy_process:
+	call Process* p3 = copy_process(p2):
+	call print_process(p3):
+	[16](2000020000,38)
+
+Testing is_equal_process:
+	call is_equal_process(p2,p3):
+	Result = 1
+
+	p2->arrival = 10
+	call is_equal_process(p2,p3):
+	Result = 1
+
+	p2->time = 20
+	call is_equal_process(p2,p3):
+	Result = 0
+
+End: Testing Process Structure
+------------------------------
+
+------------------------------
+Start: Testing Data:
+
+Testing print Data:
+[30](1000010000,1)
+[31](1000010001,2)
+[32](1000010002,3)
+[33](1000010003,4)
+[34](1000010004,5)
+[35](1000010005,6)
+[36](1000010006,7)
+[37](1000010007,8)
+[38](1000010008,9)
+[39](1000010009,10)
+
+Testing Copy Data - copy last element to first element:
+[39](1000010009,10)
+[31](1000010001,2)
+[32](1000010002,3)
+[33](1000010003,4)
+[34](1000010004,5)
+[35](1000010005,6)
+[36](1000010006,7)
+[37](1000010007,8)
+[38](1000010008,9)
+[39](1000010009,10)
+
+Testing destroy_data:
+	destroy_data successful
+
+End: Testing Data
+------------------------------
+
+------------------------------
+Start: Testing Stack:
+
+--------- Testing Create/isEmpty/print ----------- 
+Calling Stack* s = create_stack(10), print_stack(s):
+Stack Size = 0
+<emtpy_stack>
+
+Calling isEmpty_stack(s):
+1
+
+Testing push/is_empty/is_full/print:
+Calling push_stack(create_process(2000040000, 23, 44)):
+success = 1
+Calling print_stack(s):
+Stack Size = 1
+[44](2000040000,23)
+
+Calling isEmpty_stack(s):
+0
+
+Calling isFull_stack(s):
+0
+
+Adding 9 elements to Stack:
+Stack Size = 2
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 3
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 4
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 5
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 6
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 7
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 8
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 9
+[8](1000010007,17)
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Stack Size = 10
+[9](1000010008,18)
+[8](1000010007,17)
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+
+Calling isFull_stack(s):
+1
+
+Calling push_stack(randomProcess(5,20,0,40):
+Error(push_stack): stack is full
+success = 0
+
+
+Testing peek/pop:
+Calling d = peek_stack(s)
+[9](1000010008,18)
+
+Calling d = pop_stack(s)
+Printing popped data:
+[9](1000010008,18)Printing Stack: 
+Stack Size = 9
+[8](1000010007,17)
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Popping 9 elements
+Printing popped data:
+[8](1000010007,17)
+Printing Stack: 
+Stack Size = 8
+[7](1000010006,16)
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[7](1000010006,16)
+Printing Stack: 
+Stack Size = 7
+[6](1000010005,15)
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[6](1000010005,15)
+Printing Stack: 
+Stack Size = 6
+[5](1000010004,14)
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[5](1000010004,14)
+Printing Stack: 
+Stack Size = 5
+[4](1000010003,13)
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[4](1000010003,13)
+Printing Stack: 
+Stack Size = 4
+[3](1000010002,12)
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[3](1000010002,12)
+Printing Stack: 
+Stack Size = 3
+[2](1000010001,11)
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[2](1000010001,11)
+Printing Stack: 
+Stack Size = 2
+[1](1000010000,10)
+[44](2000040000,23)
+
+Printing popped data:
+[1](1000010000,10)
+Printing Stack: 
+Stack Size = 1
+[44](2000040000,23)
+
+Printing popped data:
+[44](2000040000,23)
+Printing Stack: 
+Stack Size = 0
+<emtpy_stack>
+
+
+Testing peek/pop/destroy:
+Error(pop_stack): stack is empty
+Error(peek_stack): stack is empty
+Calling destroy_stack(&s):
+destroy_stack successful
+
+End: Testing Stack
+------------------------------
+

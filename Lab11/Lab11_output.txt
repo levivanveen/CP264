@@ -1,0 +1,99 @@
+------------------------------
+Start: Testing remove_vertex_graph:
+
+Creating a graph with 8 vertices
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 0
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+    -     -     -     -     -     -     -     - 
+
+Adding 12 edges:
+(Adjacency Matrix Representation): #Vertices = 8, #Edges = 12
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V3) , (4,V4)
+(5,V5) , (6,V6) , (7,V7)
+    -     1     -     -     1     -     -     1 
+    1     -     -     -     1     1     -     - 
+    -     -     -     -     -     -     1     1 
+    -     -     -     -     1     -     1     - 
+    1     1     -     1     -     1     1     1 
+    -     1     -     -     1     -     -     - 
+    -     -     1     1     1     -     -     - 
+    1     -     1     -     1     -     -     - 
+
+remove V3:
+(Adjacency Matrix Representation): #Vertices = 7, #Edges = 10
+Vertices: (0,V0) , (1,V1) , (2,V2) , (3,V7) , (4,V4)
+(5,V5) , (6,V6)
+    -     1     -     1     1     -     - 
+    1     -     -     -     1     1     - 
+    -     -     -     1     -     -     1 
+    1     -     1     -     1     -     - 
+    1     1     -     1     -     1     1 
+    -     1     -     -     1     -     - 
+    -     -     1     -     1     -     - 
+
+remove V2:
+(Adjacency Matrix Representation): #Vertices = 6, #Edges = 8
+Vertices: (0,V0) , (1,V1) , (2,V6) , (3,V7) , (4,V4)
+(5,V5)
+    -     1     -     1     1     - 
+    1     -     -     -     1     1 
+    -     -     -     -     1     - 
+    1     -     -     -     1     - 
+    1     1     1     1     -     1 
+    -     1     -     -     1     - 
+
+remove V0:
+new size = 5
+(Adjacency Matrix Representation): #Vertices = 5, #Edges = 5
+Vertices: (0,V5) , (1,V1) , (2,V6) , (3,V7) , (4,V4)
+    -     1     -     -     1 
+    1     -     -     -     1 
+    -     -     -     -     1 
+    -     -     -     -     1 
+    1     1     1     1     - 
+
+remove V4:
+(Adjacency Matrix Representation): #Vertices = 4, #Edges = 1
+Vertices: (0,V5) , (1,V1) , (2,V6) , (3,V7)
+    -     1     -     - 
+    1     -     -     - 
+    -     -     -     - 
+    -     -     -     - 
+
+remove V7:
+(Adjacency Matrix Representation): #Vertices = 3, #Edges = 1
+Vertices: (0,V5) , (1,V1) , (2,V6)
+    -     1     - 
+    1     -     - 
+    -     -     - 
+
+remove V1:
+(Adjacency Matrix Representation): #Vertices = 2, #Edges = 0
+Vertices: (0,V5) , (1,V6)
+    -     - 
+    -     - 
+
+remove V6:
+(Adjacency Matrix Representation): #Vertices = 1, #Edges = 0
+Vertices: (0,V5)
+    -
+
+remove V5:
+(Adjacency Matrix Representation): #Vertices = 0, #Edges = 0
+<null graph>
+
+Destroy vertices
+Destroy edges
+Graph destroyed successfully
+
+End: Testing remove_vertex_graph
+------------------------------
+

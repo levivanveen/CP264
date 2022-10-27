@@ -1,0 +1,179 @@
+------------------------------
+Start: Testing heap basic functions:
+
+heap created successfully with capacity 20
+
+print contents of heap:
+heap Capacity = 20, size = 0
+<empty heap>
+
+is_empty_heap(h)? 1
+h->size = 0
+h->capacity = 20
+
+heap successfully destroyed
+
+End: Testing heap basic functions
+------------------------------
+
+------------------------------
+Start: Testing Right(i), Left(i), Parent(i):
+
+Creating a heap with capacity = 20
+Inserting 20 integers
+heap Capacity = 20, size = 20
+[200 , 190 , 180 , 170 , 160 , 110 , 100 , 120 , 150 , 140 , 130 , 30 , 50 , 70 , 20 , 40 , 60 , 90 , 80 , 10]
+
+i = 0	 Parent(i) = 0	 Left(i) = 1	 Right(i) = 2
+i = 1	 Parent(i) = 0	 Left(i) = 3	 Right(i) = 4
+i = 2	 Parent(i) = 0	 Left(i) = 5	 Right(i) = 6
+i = 3	 Parent(i) = 1	 Left(i) = 7	 Right(i) = 8
+i = 4	 Parent(i) = 1	 Left(i) = 9	 Right(i) = 10
+i = 5	 Parent(i) = 2	 Left(i) = 11	 Right(i) = 12
+i = 6	 Parent(i) = 2	 Left(i) = 13	 Right(i) = 14
+i = 7	 Parent(i) = 3	 Left(i) = 15	 Right(i) = 16
+i = 8	 Parent(i) = 3	 Left(i) = 17	 Right(i) = 18
+i = 9	 Parent(i) = 4	 Left(i) = 19	 Right(i) = 20
+i = 10	 Parent(i) = 4	 Left(i) = 21	 Right(i) = 22
+i = 11	 Parent(i) = 5	 Left(i) = 23	 Right(i) = 24
+i = 12	 Parent(i) = 5	 Left(i) = 25	 Right(i) = 26
+i = 13	 Parent(i) = 6	 Left(i) = 27	 Right(i) = 28
+i = 14	 Parent(i) = 6	 Left(i) = 29	 Right(i) = 30
+i = 15	 Parent(i) = 7	 Left(i) = 31	 Right(i) = 32
+i = 16	 Parent(i) = 7	 Left(i) = 33	 Right(i) = 34
+i = 17	 Parent(i) = 8	 Left(i) = 35	 Right(i) = 36
+i = 18	 Parent(i) = 8	 Left(i) = 37	 Right(i) = 38
+i = 19	 Parent(i) = 9	 Left(i) = 39	 Right(i) = 40
+
+heap destroyed successfully
+
+End: Testing Right(i), Left(i), Parent(i)
+------------------------------
+
+------------------------------
+Start: Testing contains_heap:
+
+Creating a heap with capacity 20
+inserting 10 integers
+heap Capacity = 20, size = 10
+[100 , 80 , 90 , 60 , 70 , 10 , 50 , 20 , 30 , 40]
+
+contains(100) = 1
+contains(30) = 1
+contains(300) = 0
+
+heap destroyed successfully
+End: Testing contains_heap
+------------------------------
+
+------------------------------
+Start: Testing insert_heap & remove_heap:
+
+Create a heap with capacity = 5
+heap Capacity = 5, size = 0
+<empty heap>
+
+insert 40:
+heap Capacity = 5, size = 1
+[40]
+
+insert 70:
+heap Capacity = 5, size = 2
+[70 , 40]
+
+insert 10:
+heap Capacity = 5, size = 3
+[70 , 40 , 10]
+
+insert 30:
+heap Capacity = 5, size = 4
+[70 , 40 , 10 , 30]
+
+insert 90:
+heap Capacity = 5, size = 5
+[90 , 70 , 10 , 30 , 40]
+
+insert 50:
+heap Capacity = 10, size = 6
+[90 , 70 , 50 , 30 , 40 , 10]
+
+insert 100:
+heap Capacity = 10, size = 7
+[100 , 70 , 90 , 30 , 40 , 10 , 50]
+
+insert 20:
+heap Capacity = 10, size = 8
+[100 , 70 , 90 , 30 , 40 , 10 , 50 , 20]
+
+insert 60:
+heap Capacity = 10, size = 9
+[100 , 70 , 90 , 60 , 40 , 10 , 50 , 20 , 30]
+
+insert 80:
+heap Capacity = 10, size = 10
+[100 , 80 , 90 , 60 , 70 , 10 , 50 , 20 , 30 , 40]
+
+peek_heap = 100
+
+remove heap root:
+heap Capacity = 10, size = 9
+[90 , 80 , 50 , 60 , 70 , 10 , 40 , 20 , 30]
+
+remove heap root:
+heap Capacity = 10, size = 8
+[80 , 70 , 50 , 60 , 30 , 10 , 40 , 20]
+
+remove heap root:
+heap Capacity = 10, size = 7
+[70 , 60 , 50 , 20 , 30 , 10 , 40]
+
+remove heap root:
+heap Capacity = 10, size = 6
+[60 , 40 , 50 , 20 , 30 , 10]
+
+remove heap root:
+heap Capacity = 10, size = 5
+[50 , 40 , 10 , 20 , 30]
+
+remove heap root:
+heap Capacity = 10, size = 4
+[40 , 30 , 10 , 20]
+
+remove heap root:
+heap Capacity = 10, size = 3
+[30 , 20 , 10]
+
+remove heap root:
+heap Capacity = 5, size = 2
+[20 , 10]
+
+remove heap root:
+heap Capacity = 5, size = 1
+[10]
+
+remove heap root:
+heap Capacity = 2, size = 0
+<empty heap>
+
+remove heap root:
+Error(remove_heap): Cannot delete from an empty heap
+heap Capacity = 2, size = 0
+<empty heap>
+
+heap successfully destroyed
+
+End: Testing insert_heap & remove_heap
+------------------------------
+
+------------------------------
+Start: Testing heap_sort:
+
+Printing array before sorting: 
+[130,40,70,120,10,30,110,180,90,170,140,190,50,100,20,60,200,150,80,160]
+
+Printing array after sorting: 
+[200,190,180,170,160,150,140,130,120,110,100,90,80,70,60,50,40,30,20,10]
+
+End: Testing heap_sort
+------------------------------
+

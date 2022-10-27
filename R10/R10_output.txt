@@ -1,0 +1,163 @@
+------------------------------
+Start: Testing Linked List Node:
+
+Create process [40](1000010000,20)
+Create a node with the above process
+Print node: [40](1000010000,20)
+
+Create another node:
+[30](1000010001,10)
+
+link two nodes together:
+Print node 2 through node 1:
+[30](1000010001,10)
+
+Copy Node 1 to node 3:
+Print node 3:
+[40](1000010000,20)
+Print node 2 through node 3:
+[30](1000010001,10)
+
+Destroy node 1
+Destroy node 2
+Destroy node 3
+
+End: Testing Linked List Node
+------------------------------
+
+------------------------------
+Start: Testing Linked List append:
+
+Create an empty list:
+NULL
+
+Appending to an empty linked list
+[40](1000010000,20)-->NULL
+
+Appending second element
+[40](1000010000,20)-->[15](1000010001,10)-->NULL
+
+Appending third element
+[40](1000010000,20)-->[15](1000010001,10)-->[36](1000010002,60)-->NULL
+
+destroy linked list
+
+End: Testing Linked List append
+------------------------------
+
+------------------------------
+Start: Testing array_to_list function:
+
+Creating an array of 10 Data (Process) Objects:
+[10](1000010000,1)
+[11](1000010001,2)
+[12](1000010002,3)
+[13](1000010003,4)
+[14](1000010004,5)
+[15](1000010005,6)
+[16](1000010006,7)
+[17](1000010007,8)
+[18](1000010008,9)
+[19](1000010009,10)
+
+Creating an empty linked list:
+NULL
+
+Contents of the list after invoking array_to_List:
+[10](1000010000,1)-->[11](1000010001,2)-->[12](1000010002,3)-->[13](1000010003,4)-->[14](1000010004,5)-->[15](1000010005,6)-->[16](1000010006,7)-->[17](1000010007,8)-->[18](1000010008,9)-->[19](1000010009,10)-->NULL
+Number of elements: 10
+
+destroy linked list
+
+End: Testing aray_to_list function
+------------------------------
+
+------------------------------
+Start: Testing List get_node function:
+
+Creating a linked list with 10 random process:
+[10](1000010000,1)-->[11](1000010001,2)-->[12](1000010002,3)-->[13](1000010003,4)-->[14](1000010004,5)-->[15](1000010005,6)-->[16](1000010006,7)-->[17](1000010007,8)-->[18](1000010008,9)-->[19](1000010009,10)-->NULL
+
+Get item 0:
+[10](1000010000,1)
+
+Get item 3:
+[13](1000010003,4)
+
+Get item 9:
+[19](1000010009,10)
+
+Get item 10:
+Error(get_node_list): index out of range
+NULL
+
+destroy linked list
+
+End: Testing List get_node function
+------------------------------
+
+------------------------------
+Start: Testing List reverse function:
+
+Case 1: An Empty List
+NULL
+After calling reverse function:
+NULL
+
+Case 1: Single item List
+[10](1000010000,1)-->NULL
+After calling reverse function:
+[10](1000010000,1)-->NULL
+
+Case 2: List with two items
+[10](1000010000,1)-->[11](1000010001,2)-->NULL
+After calling reverse function:
+[11](1000010001,2)-->[10](1000010000,1)-->NULL
+
+Case 3: List with 10 items
+[11](1000010001,2)-->[10](1000010000,1)-->[12](1000010002,3)-->[13](1000010003,4)-->[14](1000010004,5)-->[15](1000010005,6)-->[16](1000010006,7)-->[17](1000010007,8)-->[18](1000010008,9)-->[19](1000010009,10)-->NULL
+After calling reverse function:
+[19](1000010009,10)-->[18](1000010008,9)-->[17](1000010007,8)-->[16](1000010006,7)-->[15](1000010005,6)-->[14](1000010004,5)-->[13](1000010003,4)-->[12](1000010002,3)-->[10](1000010000,1)-->[11](1000010001,2)-->NULL
+
+destroy linked list
+
+End: Testing List reverse function
+------------------------------
+
+------------------------------
+Start: Testing list remove_rear function:
+
+Create a list with 8 items:
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->[13](1000010004,4)-->[14](1000010005,5)-->[15](1000010006,6)-->[16](1000010007,7)-->[17](1000010008,8)-->NULL
+
+Removed item = [17](1000010008,8)
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->[13](1000010004,4)-->[14](1000010005,5)-->[15](1000010006,6)-->[16](1000010007,7)-->NULL
+
+Removed item = [16](1000010007,7)
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->[13](1000010004,4)-->[14](1000010005,5)-->[15](1000010006,6)-->NULL
+
+Removed item = [15](1000010006,6)
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->[13](1000010004,4)-->[14](1000010005,5)-->NULL
+
+Removed item = [14](1000010005,5)
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->[13](1000010004,4)-->NULL
+
+Removed item = [13](1000010004,4)
+[10](1000010001,1)-->[11](1000010002,2)-->[12](1000010003,3)-->NULL
+
+Removed item = [12](1000010003,3)
+[10](1000010001,1)-->[11](1000010002,2)-->NULL
+
+Removed item = [11](1000010002,2)
+[10](1000010001,1)-->NULL
+
+Removed item = [10](1000010001,1)
+NULL
+
+Error(remove_rear_list): list is empty
+Removed item = NULL
+NULL
+
+End: Testing list remove_rear function
+------------------------------
+

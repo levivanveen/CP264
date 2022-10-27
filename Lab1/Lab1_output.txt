@@ -1,0 +1,18 @@
+Enter number of tall trees: 60
+Enter number of short trees: 15
+Number of T trees = 60
+Number of S trees = 15
+Average height = 0.57
+
+Enter year: 2021
+Enter month: 09
+Enter day: 15
+Enter University: Wilfrid Laurier
+
+This is Wilfrid University
+Today is :15/9/2021
+
+Hints for C Language:
+Insert \n at end of printf for newline.
+Use "double quote" not 'single quotes' for strings.
+Use %d for integer, %f for float and %lf for double.

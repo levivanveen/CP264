@@ -1,0 +1,18 @@
+1 C is a generalpurpose imperative computer programming language
+2 supporting structured programming lexical variable scope and recursion
+3 while a static type system prevents many unintended operations
+4 
+5 By design C provides constructs that map efficiently to typical
+6 machine instructions and therefore it has found lasting use in applications
+7 that had formerly been coded in assembly language
+8 including operating systems as well as various application software
+9 for computers ranging from supercomputers to embedded systems
+10 
+11 C was originally developed by Dennis Ritchie between  and  at Bell Labs
+12 and used to reimplement the Unix operating system
+13 It has since become one of the most widely used programming languages of all time
+14 with C compilers from various vendors available for the majority of existing
+15 computer architectures and operating systems
+16 C has been standardized by the American National Standards Institute ANSI
+17 since  see ANSI C and subsequently by
+18 the International Organization for Standardization ISO

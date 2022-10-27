@@ -1,0 +1,76 @@
+Start: Testing clear
+
+Case 1:[0]
+After clear: []
+
+Case 2:[0,1,2,3,4,5,6,7,8,9]
+After clear: []
+
+End: Testing clear
+------------------------------
+Start: Testing indx
+
+Case 1:[0]
+indx(0) =  0
+indx(1) =  -1
+
+Case 2:[0,1,2,3,4,5,6,7,8,9]
+indx(5) =  5
+indx(9) =  9
+indx(10) =  -1
+
+End: Testing indx
+------------------------------
+Start: Testing remove_item
+
+Case 1:[0]
+remove_item(0) = []
+remove_item(1) = Error(remove):item not found
+[]
+
+Case 2:[0,1,2,3,4,5,6,7,8,9]
+remove_item(6) = [0,1,2,3,4,5,7,8,9]
+remove_item(9) = [0,1,2,3,4,5,7,8]
+remove_item(0) = [1,2,3,4,5,7,8]
+remove_item(9) = Error(remove):item not found
+[1,2,3,4,5,7,8]
+
+End: Testing remove_item
+------------------------------
+Start: Testing del
+
+Case 1:[10]
+del(0) = []
+del(1) = Error(del):index out of range
+[]
+
+Case 2:[10,20,30,40,50,60,70,80,90,100]
+del(6) = [10,20,30,40,50,60,80,90,100]
+del(8) = [10,20,30,40,50,60,80,90]
+del(0) = [20,30,40,50,60,80,90]
+del(9) = Error(del):index out of range
+[20,30,40,50,60,80,90]
+
+End: Testing del
+------------------------------
+Start: Testing pop
+
+Case 1:[10]
+pop(0) = []
+popped value = 10
+pop(1) = Error(pop): index out of range
+[]
+popped value = -99
+
+Case 2:pop(6) = [10,20,30,40,50,60,80,90,100]
+popped value = 70
+pop(8) = [10,20,30,40,50,60,80,90]
+popped value = 100
+pop(0) = [20,30,40,50,60,80,90]
+popped value = 10
+pop(9) = Error(pop): index out of range
+[20,30,40,50,60,80,90]
+popped value = -99
+
+End: Testing pop
+------------------------------
